@@ -1,0 +1,68 @@
+start:
+  # Format: "id:damage:count:name:ench_name:ench_level"
+
+  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
+
+  # If you don't want enchantments or custom name: "id:damage:count"
+
+  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
+
+  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
+  # or "id:damage:count:DEFAULT:ench1_id:ench1_level..." if you don't want a custom item name
+  
+  #     Enchant ids
+  #  PROTECTION ALL = 0 
+  #  PROTECTION FIRE = 1 
+  #  PROTECTION FALL = 2 
+  #  PROTECTION EXPLOSION = 3 
+  #  PROTECTION PROJECTILE = 4 
+  #  THORNS = 5 
+  #  WATER BREATHING = 6 
+  #  WATER WALKER = 7 
+  #  WATER WORKER = 8 
+  #  DAMAGE ALL = 9 
+  #  DAMAGE SMITE = 10 
+  #  DAMAGE ARTHROPODS = 11 
+  #  KNOCKBACK = 12 
+  #  FIRE ASPECT = 13 
+  #  LOOTING = 14 
+  #  EFFICIENCY = 15 
+  #  SILK TOUCH = 16 
+  #  DURABILITY = 17 
+  #  FORTUNE DIGGING = 18 
+  #  BOW POWER = 19 
+  #  BOW KNOCKBACK = 20 
+  #  BOW FLAME = 21 
+  #  BOW INFINITY = 22 
+  #  FORTUNE FISHING = 23 
+  #  LURE = 24 
+
+  # Please note: You have to write numeric IDs
+  items:
+  - "260:0:10"
+  - "1:0:64"
+  - "267:0:1:Sword Name:16:4"
+  helmet: "302:0:1"
+  chestplate: "303:0:1:DEFAULT:0:4"
+  leggings: "304:0:1:Leggings Name"
+  boots: "305:0:1"
+
+  commands:
+  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+
+  cooldown:
+    hours: 24
+    minutes: 30
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+  - "speed:120:2"
+
+  # If you do not use permissions, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "kitpvp"
+  # If you do not use permissions, use 'users' to specify which players will be able to get this kit
+  users:
+  - "luca28pet"
+  - "dioconsole"

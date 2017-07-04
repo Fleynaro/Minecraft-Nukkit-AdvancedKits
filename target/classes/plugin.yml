@@ -1,0 +1,25 @@
+name: AdvancedKits
+main: com.fleynaro.advancedkits.Main
+version: "5.1"
+author: luca28pet, fleynaro
+api: ["1.0.0"]
+description: The plugin adds kits to your PocketMine server
+website: https://github.com/luca28pet/AdvancedKits
+
+commands:
+ kit:
+  description: Get a kit!
+  usage: "/kit <kitName>"
+  aliases: [ak, advancedkits]
+  permission: advancedkits.command
+ akreload:
+  descrpition: Reload Kits settings
+  usage: "/akreload"
+  permission: advancedkits.admin
+permissions:
+ advancedkits.command:
+  description: "Allows the user to run /kit command"
+  default: true
+ advancedkits.admin:
+  description: "Allows to manage admin features"
+  default: op

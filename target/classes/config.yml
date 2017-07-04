@@ -1,0 +1,8 @@
+# Permission use
+permissions: true
+
+# Sign text (capitals don't matter)
+sign-text: "[Kit]"
+
+# AutoSave in minutes
+autosave: 5
